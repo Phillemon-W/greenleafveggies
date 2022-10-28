@@ -1,0 +1,64 @@
+@use "../globals/breakpoints" as b;
+@import "../globals/variables";
+@import "../globals/mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #1013204a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 10px;
+}
+
+body {
+  min-width: 100vw;
+  background-color: $background;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+.space {
+  width: 100%;
+  height: 300px;
+}
+
+h3,
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+h3 {
+  margin-top: -1rem !important;
+
+  @include b.breakpoint("1000") {
+    margin-top: 0rem !important;
+  }
+  @include b.breakpoint("700") {
+    margin-top: 0rem !important;
+  }
+}
+
+.bottomh3 {
+  margin-top: 0 !important;
+}
+
+.af-button {
+  @include button;
+}

@@ -1,0 +1,63 @@
+@use "../globals/breakpoints" as b;
+@import "../globals/variables";
+@import "../globals/mixins";
+
+.sectionAf {
+  @include width3;
+  padding: 7rem 0;
+
+  @include b.breakpoint("1340") {
+    padding: 3.5rem 3rem;
+  }
+  @include b.breakpoint("500") {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .line {
+    @include line;
+    margin: 1rem 0 2rem 0;
+
+    @include b.breakpoint("1000") {
+      margin-bottom: 1rem;
+    }
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: yellow;
+
+    // text-align: center;
+
+    span {
+      color: $primary;
+      font-weight: 600;
+    }
+
+    @include b.breakpoint("1000") {
+      grid-template-columns: 1fr;
+      margin-bottom: 1rem;
+      font-size: 25px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: block;
+    color: yellow;
+    // text-align: center;
+
+    @include b.breakpoint("1000") {
+      margin-bottom: 1rem;
+      font-size: 17px;
+    }
+  }
+  .poin {
+    margin-bottom: 1rem;
+  }
+}

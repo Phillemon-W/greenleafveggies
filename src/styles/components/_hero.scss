@@ -1,0 +1,78 @@
+@use "../globals/breakpoints" as b;
+@import "../globals/variables";
+@import "../globals/mixins";
+
+.hero {
+  width: 100vw;
+  min-height: 700px;
+  max-height: 80vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 20px 15px;
+
+  @include middle;
+  gap: 1rem;
+
+  @include b.breakpoint("1000") {
+    height: 80vh;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  @include b.breakpoint("700") {
+    padding: 1rem;
+    min-height: 600px;
+    max-height: 80vh;
+  }
+
+  .hero1 {
+    h3 {
+      font-size: 17px;
+      color: yellow;
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+  .hero2 {
+    width: 70%;
+    @include b.breakpoint("700") {
+      width: 100%;
+      padding: 0.2rem 0.5rem;
+    }
+    h1 {
+      font-size: 60px;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.4;
+
+      @include b.breakpoint("1000") {
+        font-size: 50px;
+        line-height: 1.2;
+      }
+      @include b.breakpoint("700") {
+        font-size: 35px;
+        line-height: 1.4;
+      }
+    }
+  }
+  .hero3 {
+    h2 {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 20px;
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 1rem;
+      @include b.breakpoint("1000") {
+        font-size: 18px;
+      }
+    }
+  }
+  button {
+    @include button;
+  }
+}

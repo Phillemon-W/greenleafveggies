@@ -1,0 +1,83 @@
+@use "../globals/breakpoints" as b;
+@import "../globals/variables";
+@import "../globals/mixins";
+
+.banner {
+  background-color: #9fc7aa;
+  @include middle;
+  gap: 2rem;
+  padding: 6rem 0;
+  margin: 0 auto;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+
+  @include b.breakpoint("1000") {
+    gap: 1rem;
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: 1.5;
+    font-weight: 600;
+
+    @include b.breakpoint("1000") {
+      margin-bottom: 1rem;
+      font-size: 25px;
+    }
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    display: block;
+    width: 50%;
+    text-align: center;
+
+    @include b.breakpoint("1000") {
+      margin-bottom: 1rem;
+      font-size: 17px;
+    }
+    @include b.breakpoint("700") {
+      width: 100%;
+      padding: 0 2rem;
+    }
+  }
+
+  button {
+    @include button;
+  }
+}
+
+.fish-layers {
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  z-index: 1;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include b.breakpoint("700") {
+    width: 90%;
+    height: 80%;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.308);
+
+    @include b.breakpoint("700") {
+      font-size: 20px;
+    }
+
+    &:nth-child(2) {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+@use "../globals/breakpoints" as b;
+@import "../globals/variables";
+@import "../globals//mixins";
+
+.header,
+.onscroll-header {
+  @include width;
+  margin: 0.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+
+  @include b.breakpoint("1340") {
+    padding: 0 2rem;
+  }
+  @include b.breakpoint("500") {
+    padding: 0 1rem;
+  }
+  @include b.breakpoint("1000") {
+    margin: 0.2rem auto;
+  }
+
+  .logo {
+    img {
+      margin-top: 5px;
+      width: 110px;
+      height: 80px;
+      object-fit: contain;
+      @include b.breakpoint("1000") {
+        width: 100px;
+        height: 60px;
+      }
+    }
+  }
+
+  .menu {
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+
+      li {
+        list-style: none;
+        text-transform: capitalize;
+        font-size: 17px;
+
+        a {
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            opacity: 0.5;
+          }
+
+          &.active:last-child {
+            font-weight: 600;
+            border-bottom: 4px solid $primary;
+          }
+          &.contact {
+            @include button;
+            font-weight: 600;
+            border-bottom: none !important;
+          }
+        }
+      }
+    }
+
+    @include b.breakpoint("1000") {
+      display: none;
+    }
+  }
+
+  .menu-mobile {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0.5rem 0 0.5rem 1rem;
+    display: none;
+
+    @include b.breakpoint("1000") {
+      display: block;
+    }
+  }
+}
+
+.scroll {
+  position: fixed;
+  z-index: 4;
+  top: -200px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  transition: top 0.3s;
+  box-shadow: 0 0 12px 12px rgba(48, 48, 48, 0.153);
+
+  // margin: 0.2rem auto;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin-top: 2px;
+      width: 90px;
+      height: 60px;
+    }
+  }
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-left: 1px solid $primary;
+  width: 70vw;
+  height: 100%;
+  z-index: 15;
+  padding: 2rem 0 0 0;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    // gap: 1.5rem;
+
+    li {
+      list-style: none;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.275);
+      width: 100%;
+      padding: 1.5rem 0rem 1.5rem 0rem;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        color: black;
+        font-size: 19px;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        &.active:last-child {
+          font-weight: 600;
+          // border-bottom: 4px solid $primary;
+        }
+      }
+    }
+  }
+}
+.back {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(235, 235, 235, 0.443);
+  opacity: 0.7;
+  z-index: 11;
+}
+.close {
+  position: fixed;
+  top: 0;
+  right: 75vw;
+  z-index: 15;
+  font-size: 30px;
+  border: 1px solid $primary;
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-line {
+  height: 7px;
+  background-color: $primary;
+  width: 100vw;
+}

@@ -1,0 +1,151 @@
+@use "../globals/breakpoints" as b;
+@import "../globals/variables";
+@import "../globals/mixins";
+
+.sectionA {
+  @include width2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 7rem 0;
+
+  @include b.breakpoint("1340") {
+    gap: 1.5rem;
+    padding: 3.5rem 3rem;
+  }
+  @include b.breakpoint("1000") {
+    grid-template-columns: 1fr;
+  }
+  @include b.breakpoint("500") {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+
+    @include b.breakpoint("1340") {
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 17px;
+      line-height: 2;
+      font-weight: 500;
+    }
+
+    .line {
+      @include line;
+      margin-bottom: 2rem;
+
+      @include b.breakpoint("1000") {
+        margin-bottom: 1rem;
+      }
+    }
+    .line2 {
+      @include line;
+      margin-bottom: 2rem;
+      margin-top: -1.4rem;
+
+      @include b.breakpoint("1000") {
+        margin-bottom: 1rem;
+        margin-top: -0.5rem;
+      }
+    }
+
+    h2 {
+      font-size: 35px;
+      line-height: 1.5;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    
+    
+
+      @include b.breakpoint("1000") {
+        grid-template-columns: 1fr;
+        margin-bottom: 1rem;
+        font-size: 25px;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      line-height: 2;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      display: block;
+
+      @include b.breakpoint("1000") {
+        margin-bottom: 1rem;
+        font-size: 17px;
+      }
+    }
+    div {
+      padding: 0;
+      margin: 0;
+      button {
+        @include button;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .illustration {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    @include b.breakpoint("700") {
+      padding-right: 0.5rem;
+    }
+
+    img {
+      &:first-child {
+        border-radius: 10px;
+        width: 500px;
+        height: 550px;
+        object-fit: cover;
+        border: none;
+        z-index: 2;
+
+        @include b.breakpoint("1000") {
+          width: 400px;
+          height: 450px;
+        }
+        @include b.breakpoint("700") {
+          width: 100%;
+          height: 400px;
+        }
+      }
+      &:last-child {
+        position: absolute;
+        top: -10%;
+        transform: translate(11%, 0%);
+        z-index: -1;
+      }
+    }
+    .image {
+      width: 500px;
+      height: 550px;
+      background-color: $primary;
+      position: absolute;
+      top: 0.8rem;
+      border-radius: 15px;
+      left: 0.8rem;
+      z-index: 1;
+
+      @include b.breakpoint("1000") {
+        width: 400px;
+        height: 450px;
+      }
+      @include b.breakpoint("700") {
+        top: 0.5rem;
+        left: 0rem;
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+}

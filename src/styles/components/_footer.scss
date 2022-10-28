@@ -1,0 +1,104 @@
+@use "../globals/breakpoints" as b;
+@import "../globals/variables";
+@import "../globals//mixins";
+
+.footer-container {
+  background-color: white;
+
+  .footer {
+    @include width2;
+
+    margin: 0rem auto;
+    padding: 4rem 0 0 0;
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @include b.breakpoint("1340") {
+      padding: 3rem 2rem;
+    }
+    @include b.breakpoint("1000") {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 0.2rem 2rem 11rem 2rem;
+    }
+    @include b.breakpoint("700") {
+      grid-template-columns: 1fr;
+      padding: 1.5rem 0;
+      gap: 2rem;
+      margin: 0.2rem 1rem 24rem 1rem;
+    }
+    // @include b.breakpoint("500") {
+    //   padding: 1rem 0;
+    // }
+
+    .first {
+      img {
+        margin-top: 5px;
+        width: 110px;
+        height: 80px;
+        object-fit: contain;
+      }
+      p {
+        width: 70%;
+        line-height: 2;
+        margin-bottom: 1rem;
+      }
+      .socials {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 1rem;
+        color: $primary;
+        cursor: pointer;
+
+        a {
+          color: $primary;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .elm {
+      h4 {
+        font-size: 17px;
+        line-height: 2;
+        font-weight: 500;
+      }
+
+      .line {
+        @include line;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+            &.active {
+              font-weight: 600;
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.copy {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(12, 12, 12, 0.933);
+  width: 100%;
+}
