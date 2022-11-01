@@ -13,7 +13,7 @@ const Nous = () => {
         heading={"Who are we?"}
         image={"/img/nous.jpg"}
         desc={
-          "We are key players in the production and supply of sun-dried Kunde"
+          "We are a trusted African Traditional Veggies supply company."
         }
       />
       <NousComps />

@@ -11,7 +11,7 @@ const Hero = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}
       >
-        <h3> Welcome to GreenLeaf Kunde</h3>
+        <h3> Welcome to GreenLeaf Veggies</h3>
       </motion.div>
       <motion.div
         className="hero2"
@@ -19,7 +19,7 @@ const Hero = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 style={{ color: "#ffe802"}}>Your number one supplier of sun-dried Kunde to spice up your diet</h1>
+        <h1 style={{ color: "#ffe802"}}>Your number one supplier of African Traditional Veggies</h1>
       </motion.div>
       <motion.div
         className="hero3"

@@ -13,7 +13,7 @@ const Footer = () => {
     >
       <div className="footer">
         <div className="first">
-          <img src="./img/logo.png" alt="lfish logo" />
+          <img src="./img/logo.png" alt="logo" />
           <p>
             We are a Kenyan based company with years of experience in processing and supply of dried vegetables with longer shelf life of up to 2years.
           </p>
@@ -65,7 +65,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="copy">© Copyright GreenLeaf Veggies 2022</div>
+      <div className="copy">© Copyright GreenLeaf Veggies 2022. All Rights Reserved.</div>
     </motion.div>
   );
 };

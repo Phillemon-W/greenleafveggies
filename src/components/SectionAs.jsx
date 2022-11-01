@@ -30,7 +30,7 @@ const SectionAs = () => {
           <h2>Quality control of our products</h2>
           <div className="line"></div>
           <h3>
-            The quality control of the vegetables supplied to consumers is done at our premises. It begins with choosing the best quality green veggies sourced directly from the farmers, reception and storage, sun-drying, packaging up to the finished products analyzed and delivered.
+            The quality control of the vegetables supplied to consumers is done at our premises. It begins with choosing the best quality green veggies sourced directly from the farmers, reception and storage.It is then sun-dried, well packaged and analyzed before they are delivered to the final consumers.
           </h3>
           <div>
             <NavLink to="/contact">

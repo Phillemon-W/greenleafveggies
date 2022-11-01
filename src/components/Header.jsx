@@ -106,7 +106,7 @@ const Header = () => {
       <div className="header">
         <div className="logo">
           <NavLink to="/">
-            <img src="./img/logo.png" alt="lfish logo" />
+            <img src="./img/logo.png" alt="logo" />
           </NavLink>
         </div>
 

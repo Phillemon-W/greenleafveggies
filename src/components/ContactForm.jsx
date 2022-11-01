@@ -51,7 +51,7 @@ const ContactForm = () => {
           .post(url, data)
           .then((res) => {
             // console.log(res.data.message);
-            notification("Message Envoyé");
+            notification("Message Sent");
             setIsLoading(false);
             emptyFields();
           })
@@ -61,11 +61,11 @@ const ContactForm = () => {
             setIsLoading(false);
           });
       } else {
-        notification("verifiez captcha");
+        notification("verify captcha");
         setIsLoading(false);
       }
     } else {
-      notification("verifiez les champs");
+      notification("Check the fields");
       setIsLoading(false);
     }
   };

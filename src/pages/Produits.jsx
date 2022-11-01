@@ -13,7 +13,7 @@ const Produits = () => {
         heading={"Products"}
         image={"/img/nous.jpg"}
         desc={
-          "Key player in production and supply of sun-dried Kunde."
+          "Key player in production and supply of African Traditional Veggies."
         }
       />
       <ProduitsComps />

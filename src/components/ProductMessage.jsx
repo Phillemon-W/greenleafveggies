@@ -17,7 +17,7 @@ const ProductMessage = () => {
       </h2>
       <h3>
         100% natural, organic and <br />
-        Sun-Dried Kunde.
+        Sun-Dried African Veggies such as Kunde.
       </h3>
 
       <div>

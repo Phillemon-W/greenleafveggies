@@ -30,7 +30,7 @@ const ContactComps = () => {
             </a>
           </div>
           <div className="item">
-            <a href="https://api.WhatsApp.com/send?phone=+254752243399&text=Bonjour L'fish, je vous contacte depuis votre site web.">
+            <a href="https://api.WhatsApp.com/send?phone=+254752243399&text=Hello Greenleaf Veggies, I am contacting you from your website.">
               <BsWhatsapp />
               <p>+254752243399</p>
             </a>

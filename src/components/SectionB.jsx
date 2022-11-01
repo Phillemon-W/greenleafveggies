@@ -31,7 +31,7 @@ const SectionB = () => {
           <div className="line"></div>
           <h2>Advice and Support</h2>
           <h3>
-            As an extension of our vegetables production and supply activities, giving advice to farmers and on best practices for Kunde production is the key to success of our business.We rely on farmers the same way our customers have put their trust in us for supply of high quality, sun-dried Cowpeas leaves(Kunde).  
+            As an extension of our vegetables production and supply activities, giving advice to farmers and on best practices for African Veggies production is the key to success of our business. We rely on farmers the same way our customers have put their trust in us for supply of high quality, fresh African veggies such as Cowpea leaves(Kunde).  
           </h3>
           <div>
             <NavLink to="/activite">

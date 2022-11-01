@@ -15,10 +15,10 @@ const SectionD = () => {
         <div className="line"></div>
         <h2>Research and Development Greenleaf Veggies</h2>
         <h3>
-          Our predominantly agricultural country offers a variety of products for  brimming with useful nutritional values for growth and development of healthy green veggies such as Cowpeas(kunde). 
+          Our predominantly agricultural country offers a variety of products for brimming with useful nutritional values for growth and development of healthy green veggies such as Cowpeas(kunde). 
         </h3>
         <h3>
-          The provision of raw materials for production of farm inputs, manure and sustainability mechanisms are at the heart of production of quality green veggies at Greenleaf Veggies, for the happiness of the consumers that you are! To create a better world where hunger, malnutrion and malnourishment no longer have a place , we will have to work on innovation to make our business responsible and sustainable.  
+          The provision of raw materials for production of farm inputs, manure and sustainability mechanisms are at the heart of production of quality African veggies at Greenleaf Veggies, for the happiness of the consumers that you are! To create a better world where hunger, malnutrion and malnourishment no longer have a place , we will have to work on innovation to make our business responsible and sustainable.  
         </h3>
         <div>
           <NavLink to="/contact">

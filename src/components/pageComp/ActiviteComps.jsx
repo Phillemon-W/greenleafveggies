@@ -6,7 +6,7 @@ import Banner from "../Banner";
 
 const textA = {
   heading: "GreenLeaf Kunde, a trusted green veggies supply company, to the satisfaction of the consumers.",
-  body: "GreenLeaf Veggies ensure continous supply of dried Kunde to our customers at a cheaper price, compared to our competitors.<br><br> Our veggies are sourced directly from the farmers, processed and dried to preserve them for a longer shelf life. The dried Cowpea leaves have a longer shelf life of up to 2yrs with same taste as fresh Kunde. We use a waterproof zip lock bag to keep the Kunde airtight and fresh.",
+  body: "GreenLeaf Veggies ensures continous supply of dried and fresh African veggies to our customers at a cheaper price, compared to our competitors.<br><br> Our veggies are sourced directly from the farmers, processed and dried to preserve them for a longer shelf life.Our products such as the dried Cowpea leaves(Kunde) have a longer shelf life of up to 2yrs with same taste as fresh Kunde. We use a waterproof zip lock bag to keep the vegetables airtight and fresh.",
 };
 
 const textB = {

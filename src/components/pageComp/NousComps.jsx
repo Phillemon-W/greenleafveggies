@@ -69,13 +69,15 @@ const NousComps = () => {
             <h2>Our Vision</h2>
             <div className="line2"></div>
             <h3>
-             Our vision is to increase the desire of African culinary experience by bringing African veggies closer to the plate. We also aim to cut down on wastage and degradation of the veggies quality due to their short life span.
+             We want to increase the desire of African culinary experience by bringing the African veggies closer to the plate. We also aim to cut down on wastage and degradation of the veggies quality due to their short life span.
             </h3>
+
+           <h2>Objectives</h2>
+           <div className="line2"></div>
+
             <h3>
             The objective of our business is to provide a high quality product and reliable service for our customers. We hope you will enjoy visiting our web site and using our products as much as we enjoyed providing them for you.
-            </h3>
-            <h3>
-            All our company actions are respecting nature. Commitment to nature engages us in safe guarding the environment by taking care of resources and properly handing plantation.Our customer is the most important person for our company weather who is visiting, writing, or telephone.For any other information about our products & services please contact us as we are here to serve you at anytime.
+             For any other information about our products & services please contact us as we are here to serve you at anytime.
             </h3>
           </motion.div>
         </div>

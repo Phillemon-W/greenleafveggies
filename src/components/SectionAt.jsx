@@ -29,7 +29,7 @@ const SectionAt = () => {
           <h2>Advice and assistance from our experts</h2>
           <div className="line"></div>
           <h3>
-            Proximity to you, our customers, gives the products we deliver to you the ability to maintain its quality  right from the time it is delivered to preparation of your veggies. <br></br> We go beyond product supply and delivery for your good. We offer you with the a simple recipe and prepation procedures, well detailed in the package of our products. 
+            Proximity to you, our customers, gives the products we deliver to you the ability to maintain its quality  right from the time of production to preparation of your veggies. <br></br> We go beyond product production, supply and delivery for your good. We provide a simple recipe and prepation procedures, well detailed in the package of our products. 
           </h3>
         </motion.div>
       </div>
