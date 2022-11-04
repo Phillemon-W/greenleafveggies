@@ -57,7 +57,7 @@ const ContactForm = () => {
           })
           .catch((err) => {
             // console.log(err.response.data.message);
-            notification(`Erreur ${err.response.data.message}`);
+            notification(`Error ${err.response.data.message}`);
             setIsLoading(false);
           });
       } else {
@@ -205,7 +205,7 @@ const ContactForm = () => {
         {/* captcha */}
         <ReCAPTCHA
           className="thecaptcha"
-          sitekey="6LepjkEiAAAAAIRJVxvsH0jMHKy2zxglStU0OHRi"
+          sitekey="6LcbctYiAAAAAKV7wyrFg52ltHwQJNE-aYoSi7P7"
           onChange={handleCaptcha}
         />
 

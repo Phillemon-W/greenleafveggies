@@ -1,5 +1,6 @@
 {
   "name": "greenleaf",
+  "homepage": "http://greenleafveggies.africa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -18,7 +18,7 @@ const Banner = () => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        Contact us to place your order today and get it delivered to your doorstep in less than 24hrs! Buy a packet of sun-dried Kunde for as low as ksh100.
+        Contact us to place your order today and get it delivered to your doorstep in less than 24hrs! Buy a packet of <b>50g</b> sun-dried Kunde for as low as <b>ksh100</b> and <b>80g</b> going for <b>ksh150</b> only.
       </motion.h3>
       <div>
         <NavLink to="/produits">

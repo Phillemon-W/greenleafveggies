@@ -30,7 +30,7 @@ const ContactComps = () => {
             </a>
           </div>
           <div className="item">
-            <a href="https://api.WhatsApp.com/send?phone=+254752243399&text=Hello Greenleaf Veggies, I am contacting you from your website.">
+            <a href="https://api.WhatsApp.com/send?phone=+254752243399&text=Hello GreenLeaf Veggies, I am contacting you from your website.">
               <BsWhatsapp />
               <p>+254752243399</p>
             </a>
@@ -42,9 +42,9 @@ const ContactComps = () => {
             </a>
           </div>
           <div className="item">
-            <a href="https://greenleafveggies.com">
+            <a href="https://www.greenleafveggies.africa">
               <TbWorld />
-              <p>greenleafveggies.com</p>
+              <p>greenleafveggies.africa</p>
             </a>
           </div>
           <div className="item">
