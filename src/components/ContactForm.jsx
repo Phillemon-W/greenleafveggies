@@ -170,7 +170,7 @@ const ContactForm = () => {
 							id="phone"
 							name="phone"
 							required
-							placeholder="Eg: +254 710 000 000"
+							placeholder="Eg: 0710 000 000"
 							onChange={(e) =>
 								setValues({
 									name: values.name,
