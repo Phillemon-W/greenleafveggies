@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
 
+
 const ContactForm = () => {
 
 	const [isLoading, setIsLoading] = useState(false);
@@ -28,12 +29,10 @@ const ContactForm = () => {
 			if (captchaState) {
 				console.log("go");
 
-				let emailJsServiceId = "service_z1ohvsd";
-				let emailJsTemplateId = "template_14u8avb";
-				let emailJsPublicKey = "5drNycYOrOnJhoBEB";
-				// let emailJsServiceId = "service_o2gv5b8";
-				// let emailJsTemplateId = "template_m62ean4";
-        // let emailJsPublicKey = "YWjap1A0HWS29WQpl";
+				
+				let emailJsServiceId = "service_o2gv5b8";;
+				let emailJsTemplateId = "template_m62ean4";
+        let emailJsPublicKey = "YWjap1A0HWS29WQpl";
         
         // const token = refCaptcha.current.getValue();
 
