@@ -2,6 +2,7 @@ import React from "react";
 import SingleProduct from "../SingleProduct";
 import ProductMessage from "../ProductMessage";
 
+
 const products = [
   {
     title: "Sun-dried <span>cowpea leaves(Kunde)</span> ",
@@ -21,20 +22,20 @@ const products = [
 
 const ProduitsComps = () => {
   return (
-    <div className="produits">
-      {products.map((item, idx) => (
-        <SingleProduct
-          key={idx}
-          title={item.title}
-          desc={item.desc}
-          points={item.points}
-          tags={item.tags}
-        />
-      ))}
+		<div className="produits">
+			{products.map((item, idx) => (
+				<SingleProduct
+					key={idx}
+					title={item.title}
+					desc={item.desc}
+					points={item.points}
+					tags={item.tags}
+				/>
+			))}
 
-      <ProductMessage />
-    </div>
-  );
+			<ProductMessage />
+		</div>
+	);
 };
 
 export default ProduitsComps;

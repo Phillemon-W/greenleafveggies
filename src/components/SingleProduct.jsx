@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BsCheckLg } from "react-icons/bs";
+import kunde from "../img/lfish.jpeg"
 
 const SingleProduct = ({ title, desc, points, tags }) => {
   const handleCommands = (e) => {
@@ -12,6 +13,12 @@ const SingleProduct = ({ title, desc, points, tags }) => {
       `https://api.WhatsApp.com/send?phone=+254752243399&text=Numero De Commande: ${cmdNum} -- Produit: ${proName} `
     );
   };
+  const style = {
+    width: "100%",
+    marginBottom: '1rem',
+    borderRadius:'10px'
+    
+  }
 
   return (
     <>
@@ -21,7 +28,13 @@ const SingleProduct = ({ title, desc, points, tags }) => {
         transition={{ duration: 0.8 }}
         className="single-product sectionAf"
       >
-        <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>
+        <h2 style={{
+          marginBottom: '1.5rem',
+          marginTop:'0'
+        }} dangerouslySetInnerHTML={{ __html: title }}></h2>
+        <div >
+        <img style={style} src={kunde} alt="" />
+        </div>
         <h3 className="poin" dangerouslySetInnerHTML={{ __html: desc }}></h3>
         <div className="points">
           <ul>
@@ -39,7 +52,7 @@ const SingleProduct = ({ title, desc, points, tags }) => {
         <div className="tags">
           <ul>
             {tags.map((item, idx) => (
-              <li key={idx}>{item}</li>
+              <li key={idx}>{item} </li>
             ))}
           </ul>
         </div>
